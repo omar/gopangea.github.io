@@ -1,18 +1,3 @@
-html {
-    background-color: #161616;
-}
-
-.site-header {
-    background-color: #fff;
-
-    @include media-query($on-palm) {
-        * {
-            float: none;
-            text-align: center;
-        }
-    }
-}
-
 .col-left {
     float: left;
     width: 70%;
@@ -34,6 +19,11 @@ html {
 }
 
 .post {
+    background-color: #fff;
+    padding: 30px;
+}
+
+.page {
     background-color: #fff;
     padding: 30px;
 }
@@ -60,31 +50,25 @@ html {
     }
 }
 
-footer {
-    background-color: #161616;
-    text-align: center;
-    
-    .social {
-        a {
-            display: inline-block;
-            padding: 0 20px 20px 20px
-        }
-    }
-    
-    .copyright {
-        color: #fff;
-        font-size: 75%;
-    }
 
-    a {
-        color: #fff;
+#our-stack .post-content {
+     @media screen and (min-width: 800px) {
+        ul {
+            text-align: center;
 
-        &:visited {
-            color: #fff;
-        }
+            li {
+                display: inline-block;
+                margin: 0 30px;
 
-        &:hover {
-            color: $brand-color;
+                a {
+                    font-size: 1.3em;
+                }
+            }
+
+            em {
+                display: block;
+                font-style: normal;
+            }
         }
     }
 }

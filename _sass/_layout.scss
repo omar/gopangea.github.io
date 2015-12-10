@@ -1,182 +1,105 @@
+html {
+    background-color: #000;
+}
+
 /**
  * Site header
  */
 .site-header {
-    min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
+    background-color: #fff;
 
     img {
         width: 213.5px; // 1/4th the size of the actual image
-        margin-left: -25px; // handle the padding inside the image
-
+        vertical-align: top;
         @include media-query($on-palm) {
             margin-left: 0; // Remove the padding so the Pangea portion of the image
-                            // aligns with the "Engineering" title below.
-
+                            // to make it flush with the left padding of the main content.
         }
     }
 }
 
 .site-title {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 56px;
     margin-bottom: 0;
-    float: left;
+    text-align: center;
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
+    span {
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 56px;
+        display: inline-block;
+        margin-top: 12px;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    @media screen and (min-width: 600px) {
+        float: left;
+
+        span {
+            line-height: 0;
+            float: right;
+            margin: 40px 0 0 5px;
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        span {
+            line-height: 0;
+            margin-top: 0;
+        }
     }
 }
 
-.site-title-right {
+nav {
     font-size: 26px;
     font-weight: 300;
-    margin-top: 15px;
-    float: right;
-    @include media-query($on-palm) {
-        margin: 0 auto 20px auto;
-    }
-}
+    text-align: center;
+    padding: 20px 0;
 
-.site-nav {
-    float: right;
-    line-height: 56px;
-
-    .menu-icon {
-        display: none;
+    ul {
+        margin: 0;
     }
 
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
+    li {
+        display: inline-flex;
+        padding: 0 5px;
     }
 
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
-        }
+    @media screen and (min-width: 600px) {
+        float: right;
     }
 }
 
 
-
-/**
- * Site footer
- */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
+footer {
+    background-color: #000;
+    text-align: center;
     padding: $spacing-unit 0;
-}
-
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
-
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
+    
+    .social {
+        a {
+            display: inline-block;
+            padding: 0 20px 20px 20px
+        }
+    }
+    
+    .copyright {
+        color: #fff;
+        font-size: 75%;
     }
 
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
+    a {
+        color: #fff;
 
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        &:visited {
+            color: #fff;
+        }
+
+        &:hover {
+            color: $brand-color;
+        }
     }
 }
 
