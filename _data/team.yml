@@ -9,3 +9,5 @@ omar:
 carlos:
     name: Carlos Rocha
     description: "Carlos is responsible for Pangea's web application. Upon joining Pangea, Carlos migrated the web application from AngularJS to React JS."
+    social:
+        github: https://github.com/carlosrocha

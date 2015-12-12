@@ -10,7 +10,7 @@
     {% if author.social.github %}
         <a href="{{ author.social.github }}"><i class="fa fa-github fa-lg">&nbsp;</i></a>
     {% endif %}
-    {% if author.social.github %}
+    {% if author.social.stackoverflow %}
         <a href="{{ author.social.stackoverflow }}"><i class="fa fa-stack-overflow fa-lg">&nbsp;</i></a>
     {% endif %}
 
@@ -21,17 +21,17 @@
 <div class="author-info">
     <h3>Contributor</h3>
     {% if contributor.gravatar %}
-    <img class="photo" src="//www.gravatar.com/avatar/{{ author.gravatar }}?s=144" />
+    <img class="photo" src="//www.gravatar.com/avatar/{{ contributor.gravatar }}?s=144" />
     {% endif %}
     <span class="name">{{ contributor.name}}</span>
     {% if contributor.social.github %}
         - 
     {% endif %}
     {% if contributor.social.github %}
-        <a href="{{ author.social.github }}"><i class="fa fa-github fa-lg">&nbsp;</i></a>
+        <a href="{{ contributor.social.github }}"><i class="fa fa-github fa-lg">&nbsp;</i></a>
     {% endif %}
-    {% if contributor.social.github %}
-        <a href="{{ author.social.stackoverflow }}"><i class="fa fa-stack-overflow fa-lg">&nbsp;</i></a>
+    {% if contributor.social.stackoverflow %}
+        <a href="{{ contributor.social.stackoverflow }}"><i class="fa fa-stack-overflow fa-lg">&nbsp;</i></a>
     {% endif %}
 
     <p class="description">{{ contributor.description }}</p>
