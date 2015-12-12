@@ -13,6 +13,9 @@
     {% if author.social.stackoverflow %}
         <a href="{{ author.social.stackoverflow }}"><i class="fa fa-stack-overflow fa-lg">&nbsp;</i></a>
     {% endif %}
+    {% if author.social.linkedin %}
+        <a href="{{ author.social.linkedin }}"><i class="fa fa-linkedin fa-lg">&nbsp;</i></a>
+    {% endif %}
 
     <p class="description">{{ author.description }}</p>
 </div>
@@ -32,6 +35,9 @@
     {% endif %}
     {% if contributor.social.stackoverflow %}
         <a href="{{ contributor.social.stackoverflow }}"><i class="fa fa-stack-overflow fa-lg">&nbsp;</i></a>
+    {% endif %}
+    {% if contributor.social.linkedin %}
+        <a href="{{ contributor.social.linkedin }}"><i class="fa fa-linkedin fa-lg">&nbsp;</i></a>
     {% endif %}
 
     <p class="description">{{ contributor.description }}</p>
