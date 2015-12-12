@@ -1,4 +1,5 @@
 <div class="author-info">
+    <h3>Author</h3>
     {% if author.gravatar %}
     <img class="photo" src="//www.gravatar.com/avatar/{{ author.gravatar }}?s=144" />
     {% endif %}
@@ -15,3 +16,24 @@
 
     <p class="description">{{ author.description }}</p>
 </div>
+
+{% if contributor %}
+<div class="author-info">
+    <h3>Contributor</h3>
+    {% if contributor.gravatar %}
+    <img class="photo" src="//www.gravatar.com/avatar/{{ author.gravatar }}?s=144" />
+    {% endif %}
+    <span class="name">{{ contributor.name}}</span>
+    {% if contributor.social.github %}
+        - 
+    {% endif %}
+    {% if contributor.social.github %}
+        <a href="{{ author.social.github }}"><i class="fa fa-github fa-lg">&nbsp;</i></a>
+    {% endif %}
+    {% if contributor.social.github %}
+        <a href="{{ author.social.stackoverflow }}"><i class="fa fa-stack-overflow fa-lg">&nbsp;</i></a>
+    {% endif %}
+
+    <p class="description">{{ contributor.description }}</p>
+</div>
+{% endif %}

@@ -2,6 +2,7 @@
 layout: default
 ---
 {% assign author = site.data.team[page.author] %}
+{% assign contributor = site.data.team[page.contributor] %}
 {% if page.image %}
   <img src="/assets/blog-post-headers/{{ page.image }}" />
 {% endif %}
@@ -27,3 +28,5 @@ layout: default
 
 <a id="author"></a>
 {% include author.html %}
+
+
