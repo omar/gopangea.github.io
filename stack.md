@@ -20,9 +20,9 @@ css-id: our-stack
 
 # Backend
 
-* [.NET/C#](https://get.asp.net) _for_ Core
+* [.NET/C#](http://dotnet.github.io/) _for_ Core
+* [ASP.NET MVC](https://get.asp.net/) _for_ APIs
 * [Node](https://nodejs.org/)/[TypeScript](http://www.typescriptlang.org/) _for_ Microservices
-* [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)/[JSON](https://en.wikipedia.org/wiki/JSON) _for_ APIs
 
 # Storage
 
