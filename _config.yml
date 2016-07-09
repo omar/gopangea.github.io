@@ -10,6 +10,16 @@ title: Pangea Engineering
 email: engineering-blog@gopangea.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://engineering.gopangea.com" # the base hostname & protocol for your site
+collections:
+    jobs:
+        output: true
+        permalink: /join/:path
+
+defaults:
+  - scope:
+      type: jobs
+    values:
+      layout: job
 
 # Build settings
 markdown: kramdown

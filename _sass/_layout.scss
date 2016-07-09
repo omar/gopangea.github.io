@@ -140,11 +140,13 @@ footer {
 /**
  * Posts
  */
-.post-header {
+.post-header,
+.content header {
     margin-bottom: $spacing-unit;
 }
 
-.post-title {
+.post-title,
+.content h1 {
     font-size: 42px;
     line-height: 1;
 
@@ -153,7 +155,8 @@ footer {
     }
 }
 
-.post-content {
+.post-content,
+.content-body {
     margin-bottom: $spacing-unit;
 
     h2 {

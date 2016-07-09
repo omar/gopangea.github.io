@@ -24,7 +24,8 @@
     padding: 30px;
 }
 
-.post {
+.post,
+.content {
     background-color: #fff;
     padding: 30px;
 
@@ -82,6 +83,29 @@
                 display: block;
                 font-style: normal;
             }
+        }
+    }
+}
+
+.job {
+    .apply-now {
+        font-size: 24px;
+        background-color: #00abc7;
+        color: #fff;
+        display: inline-block;
+        padding: 10px 20px;
+
+        &:hover {
+            background-color: #73D2E0;
+        }
+    }
+
+    .back-to-openings {
+        padding: 0 0 10px 0;
+        display: inline-block;
+
+        span {
+            font-size: 20px;
         }
     }
 }
