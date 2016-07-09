@@ -11,6 +11,12 @@
         clear: both;
         margin-left: 0;
     }
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
 .home {
@@ -21,6 +27,13 @@
 .post {
     background-color: #fff;
     padding: 30px;
+
+    img {
+        width: calc(100% + 60px);
+        margin-left: calc(-30px);
+        margin-right: calc(-30px);
+        max-width: 200%;
+    }
 }
 
 .page {

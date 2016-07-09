@@ -9,7 +9,7 @@ layout: default
     <ul class="post-list">
       {% for post in site.posts %}
         <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} by {{ site.data.team[post.author].name }}</span>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} {% if post.author %} by {{ site.data.team[post.author].name }}{% endif %}</span>
           <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
@@ -32,7 +32,6 @@ layout: default
     </p>
 
     <p>You can find our open source work at <a href="https://github.com/gopangea">github.com/gopangea</a>.</p>
-    <br /><br />
   </div>
 
 </div>

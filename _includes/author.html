@@ -1,3 +1,4 @@
+{% if author %}
 <div class="author-info">
     <h3>Author</h3>
     {% if author.gravatar %}
@@ -19,6 +20,7 @@
 
     <p class="description">{{ author.description }}</p>
 </div>
+{% endif %}
 
 {% if contributor %}
 <div class="author-info">
