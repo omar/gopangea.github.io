@@ -35,6 +35,5 @@ Work closely with iOS, Android, Web App, QA, and DevOps teams to ensure the Plat
 ### Applying
 In your application, please include:
 
-- Play Store links to apps you’ve contributed to and a description of portions you've  built
 - Links to your online profiles (GitHub, Twitter, etc)
 - Resume, LinkedIn profile, or Stack Overflow CV
