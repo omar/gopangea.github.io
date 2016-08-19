@@ -1,5 +1,6 @@
 ---
 title: Software Engineer - Platform
+team: Platform
 ---
 
 The Pangea Platform powers our mobile apps, our international reach, and our compliance/customer service/marketing infrastructure. We’re looking for an experienced .NET engineer to join the Platform team (currently a team of 2) in an Agile environment.

@@ -14,8 +14,15 @@ Pangea is successful because of our world-class team members and strong passion 
 
 ### Openings
 
-<ul>
-{% for job in site.jobs %}
+{% assign teams = site.jobs | group_by: "team" %}
+
+{% for team in teams %}
+  <h4>{{ team.name }}</h4>
+  
+  <ul>
+    {% for job in team.items %}
     <li><a href="{{ job.url }}">{{ job.title }}</a></li>
+    {%endfor%}
+  </ul>
+
 {% endfor %}
-</ul>

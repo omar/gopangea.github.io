@@ -1,6 +1,7 @@
 ---
 title: Lead Engineer - Android
 apply: https://gopangea.bamboohr.com/jobs/view.php?id=4
+team: Android
 ---
 
 Android is the core of our consumer offering. We’re looking for an experienced Android engineer to lead the Android team in an Agile environment.

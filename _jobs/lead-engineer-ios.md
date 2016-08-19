@@ -1,5 +1,6 @@
 ---
 title: Lead Engineer - iOS
+team: iOS
 ---
 
 We’re looking for an experienced iOS engineer to lead the iOS team in an Agile environment (currently 1 other iOS engineer).
