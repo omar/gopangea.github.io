@@ -26,11 +26,11 @@ This position requires flexibility, regular coordination, and effective cross-fu
 
 You'll be working along side other engineers on the Platform team to
 
-Participate in the Agile process (sprint planning, reviews, and retrospective)
-Discuss, plan, and develop new platform features, partner integrations, technical architecture 
-Conduct code reviews to improve your craft and the craft of your team
-Stay up to date on the ever changing .NET technology landscape
-Work closely with iOS, Android, Web App, QA, and DevOps teams to ensure the Platform meets their needs and answer questions on how things work
+- Participate in the Agile process (sprint planning, reviews, and retrospective)
+- Discuss, plan, and develop new platform features, partner integrations, technical architecture 
+- Conduct code reviews to improve your craft and the craft of your team
+- Stay up to date on the ever changing .NET technology landscape
+- Work closely with iOS, Android, Web App, QA, and DevOps teams to ensure the Platform meets their needs and answer questions on how things work
 
 ### Applying
 In your application, please include:
