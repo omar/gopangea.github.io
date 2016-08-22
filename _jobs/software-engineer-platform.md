@@ -17,7 +17,7 @@ This position requires flexibility, regular coordination, and effective cross-fu
 - Clarity, conciseness, and persuasiveness in written and verbal communication
 - A track record of working with engineering teams
 - Given high level goals, the ability to ask the right questions, provide feedback to stakeholders, break down the tasks, and create a plan to achieve the intended result
-- Genuine interest and drive to better your craft and the craft of those you lead
+- Genuine interest and drive to better your craft and the craft of your colleagues
 - Solid understanding of software best practices and design patterns
 - Willingness to treat your code base as a cherished family heirloom
 - A positive attitude
