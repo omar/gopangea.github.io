@@ -1,15 +1,22 @@
-.col-left {
-    float: left;
-    width: 70%;
-}
-
 .col-right {
-    margin-left: 70%;
-    font-size: 75%;
+    float: right;
+    width: 20%;
 
     @include media-query($on-palm) {
         clear: both;
-        margin-left: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.col-left {
+    float: left;
+    width: 78%;
+    padding-bottom: 20px;
+
+    @include media-query($on-palm) {
+        clear: both;
+        width: 100%;
     }
 
     &:after {
@@ -19,23 +26,395 @@
     }
 }
 
-.home {
-    background-color: #fff;
-    padding: 30px;
+#toc {
+    h2 {
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+        margin-bottom: 0;
+        background-color: #00abc7;
+        color: #fff;
+    }
+
+    h3 {
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+        margin-bottom: 0;
+        margin-top: 10px;
+        background-color: #fff;
+    }
+
+    & > h3:first-child {
+        margin-top: 0;
+    }
+
+    ul {
+        background-color: #fff;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li.current a {
+            border-left-color: #00abc7;
+        }
+
+        li a {
+            display: block;
+            padding: 10px 20px;
+            border-left: solid 10px transparent;
+
+            &:hover {
+                border-left-color: #76cedd;
+            }
+        }
+    }
+
+    i.fa-external-link {
+        float: right;
+        line-height: 25px;
+    }
 }
 
-.post,
 .content {
     background-color: #fff;
     padding: 30px;
 
     img {
-        width: calc(100% + 60px);
-        margin-left: calc(-30px);
-        margin-right: calc(-30px);
-        max-width: 200%;
+        width: 95%;
+        background-color: #eee;
+        padding: 15px;
+        margin: 15px auto;
     }
 }
+
+table {
+    width: 100%;
+    margin-bottom: 15px;
+
+    tr, th, td {
+        border: solid 1px #fff;
+    }
+
+    thead {
+        th {
+            padding: 5px;
+            width: auto;
+            background-color: #eee;
+
+            &.sprint-start, 
+            &.sprint-stop {
+                width: 190px;
+            }
+        }
+    }
+
+    tbody {
+        th {
+            background-color: #ccc;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 5px;
+            height: 100px;
+            vertical-align: top;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        ul {
+            margin-left: 0;
+            list-style: none;
+        }
+
+        .sprint-start,
+        .sprint-stop {
+            background-color: rgba(0,171,199, .25);
+        }
+    }
+}
+
+
+table.kanban {
+    border: solid 1px #ccc;
+    border-collapse: collapse;
+
+    th {
+        width: (100% / 7);
+    }
+
+    td, th {
+        border: solid 1px #ccc;
+    }
+
+}
+
+.version {
+    padding: 20px 20px 0 0;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+hr {
+    margin: 10px 20px;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+div#transfer-lifecycle {
+    dl {
+        $status-circle-size: 60px;
+        $action-line-width: 10px;
+        $left-margin: 45px;
+        padding: 20px 20px 20px $left-margin;
+        border-left: solid $action-line-width #bbbbbb;
+        margin: 0 20px 0 $left-margin;
+
+        &:hover {
+            background-color: #eee;
+
+            dt.status span,
+            dt.action span {
+                background-color: #00abc7;
+            }
+        }
+
+        dt.status {
+            position: relative;
+            font-weight: bold;
+
+            span {
+                position: absolute;
+                display: inline-block;
+                // (45+10+45) / 2 + (60 / 2)
+                left: (((($left-margin * 2) + $action-line-width) / 2) + ($status-circle-size / 2)) * -1;
+                width: $status-circle-size;
+                height: 0;
+                border-radius: 50%;
+                background-color: #76cedd;
+                color: #fff;
+                text-align: center;
+                padding: 18px 0 42px 0;
+            }
+        }
+
+        dt.action {
+            position: relative;
+            font-weight: bold;
+
+            span {
+                position: absolute;
+                display: inline-block;
+                left: -66px;
+                top: 50%;
+                background-color: #76cedd;
+                color: #fff;
+                width: 30px;
+                padding: 5px 0;
+                text-align: center;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 30px;
+    
+    a.ephemeral-anchor {
+        color: inherit;
+        position: relative;
+
+        i {
+            position: absolute;
+            color: #ccc;
+            left: -23px;
+            top: 2px;
+            display: none;
+        }
+
+        &:hover {
+            i {
+                display: inline;
+            }
+        }
+    }
+}
+
+h2 {
+    a.ephemeral-anchor {
+        top: 3px;
+
+    }
+}
+
+.breadcrumb {
+    font-size: 22px;
+    color: #fff;
+    background-color: #00abc7;
+    padding: 15px 30px;
+    
+    .parent {
+        font-weight: 300;
+    }
+
+    .current {
+        font-weight: bold;
+    }
+}
+
+.team {
+    margin-bottom: 20px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    li {
+        padding: 0;
+        min-height: 110px;
+        min-width: 250px;
+    }
+
+    .name {
+        font-weight: bold;
+        display: block;
+    }
+
+    .role {
+        display: block;
+    }
+
+    .photo {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-top: 0;
+        padding: 0;
+        height: 88px;
+        width: 88px;
+        background-color: transparent;
+        float: left;
+        border-radius: 50%;
+    }
+
+    .social {
+        display: inline-block;
+        padding-top: 10px;
+    }
+}
+
+ul#big-links {
+    margin: 10px auto;
+    text-align: center;
+
+    @include media-query($on-palm) {
+        text-align: left;
+    }
+
+    li {
+        display: inline-block;
+        width: 25%;
+        margin: 0 10px 10px 0;
+
+        @include media-query($on-palm) {
+            width: auto;
+            display: block;
+        }
+    }
+
+    a {
+        display: block;
+        padding: 20px;
+        background-color: #76cedd;
+        color: #fff;
+
+        &:hover {
+            background-color: #00abc7;
+        }
+    }
+
+}
+
+// Images with a caption
+img + em { 
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+/********************/
+/* Warning: lots of copy/pasted CSS ahead. TODO: cleanup */
+/********************/
+
+.content,
+.post-content {
+    & > h1,
+    & > h2,
+    & > h3 {
+        margin-top: 0;
+    }
+}
+
+/**
+ * Posts
+ */
+.post-header,
+.content header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    margin-top: 0;
+}
+
+.post-title,
+.content h1 {
+    font-size: 42px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.post-content,
+.content-body {
+    margin-bottom: $spacing-unit;
+    background-color: #fff;
+
+    h2 {
+        font-size: 32px;
+
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 26px;
+
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+}
+
 
 .page {
     background-color: #fff;
@@ -47,6 +426,10 @@
     padding: 30px;   
     margin-top: 30px;
     font-size: 90%;
+
+    h3 {
+        margin-top: 0;
+    }
 
     .name {
         font-weight: bold;
@@ -106,6 +489,34 @@
 
         span {
             font-size: 20px;
+        }
+    }
+}
+
+.post-list {
+    h2 {
+        margin-top: 0;
+    }
+}
+
+#our-stack .post-content {
+     @media screen and (min-width: 800px) {
+        ul {
+            text-align: center;
+
+            li {
+                display: inline-block;
+                margin: 0 30px;
+
+                a {
+                    font-size: 1.3em;
+                }
+            }
+
+            em {
+                display: block;
+                font-style: normal;
+            }
         }
     }
 }

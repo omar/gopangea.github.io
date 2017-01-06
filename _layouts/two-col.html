@@ -1,0 +1,55 @@
+---
+layout: base
+comments: The crazy for loop at the top is a duplicate of the for loop at the bottom which generates the nav. The top for loop is used to generate the breacrumb parent value 
+---
+{% assign url = page.url | remove: '.html' %}
+{% assign url_index = page.url | append: 'index' %}
+{% for group in layout.nav %}
+    {% for link in group.items %}
+      {% if url_index == layout.index-url and link.url == layout.index-url %}
+          {% assign current_parent = group.name  %}
+      {% elsif url == link.url %}
+          {% assign current_parent = group.name  %}
+      {% else %}
+      {% endif %}
+    {% endfor %}
+{% endfor %}
+
+<div class="col-left">
+  <div class="breadcrumb">
+      <span class="parent">{{ layout.title }} &#187;</span>
+      {% if current_parent != 'Other' %}
+      <span class="parent">{{ current_parent }} &#187;</span>
+      {% endif %}
+      <span class="current">{{ page.title }}</span>
+  </div>
+  <div class="content">
+      {{ content }}
+    </div>
+</div>
+
+<div class="col-right">
+  <div id="toc">
+    {% for group in layout.nav %}
+        <h3>{{ group.name }}</h3>
+        <ul>
+        {% for link in group.items %}
+
+          {% if url_index == layout.index-url and link.url == layout.index-url %}
+          <li class="current"> 
+          {% elsif url == link.url %}
+          <li class="current">
+          {% else %}
+          <li>
+          {% endif %}
+            {% if link.url contains 'http://'  %}
+            <a href="{{link.url}}">{{link.text}} <i class="fa fa-external-link" aria-hidden="true"></i></a>
+            {% else %}
+            <a href="{{link.url}}.html">{{link.text}}</a>
+            {% endif %}
+          </li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+  </div>  
+</div>

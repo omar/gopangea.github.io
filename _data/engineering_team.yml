@@ -1,0 +1,88 @@
+- name: Bardia Noohi
+  team: Platform
+  role: Lead Engineer
+  avatar: https://avatars1.githubusercontent.com/u/10090598?v=3&s=400
+  social:
+    github: https://github.com/BNoohi
+    linkedin: https://www.linkedin.com/in/bardia-noohi-707a8410
+    stackoverflow: http://stackoverflow.com/users/295036/bardia
+
+- name: Chris Nielson
+  team: Platform
+  role: Engineer
+
+- name: Ryan McCullagh
+  team: Platform
+  role: Engineer
+  avatar: https://avatars2.githubusercontent.com/u/1653012?v=3&s=400
+  social:
+    github: https://github.com/rmccullagh
+
+- name: Carlos Rocha
+  team: Web
+  role: Engineer
+  avatar: https://avatars3.githubusercontent.com/u/312351?v=3&s=400
+  social:
+    github: https://github.com/carlosrocha
+
+- name: Emilio Coppola 
+  team: Web
+  role: Engineer
+  avatar: https://avatars1.githubusercontent.com/u/2206700?v=3&s=400
+  social:
+    github: https://github.com/coppolaemilio
+
+- name: Jack Michel 
+  team: Web
+  role: Engineer
+  avatar: https://avatars2.githubusercontent.com/u/5263599?v=3&s=400
+  social:
+    github: https://github.com/jackmichel
+
+- name: Tim Nguyen
+  team: Android
+  role: Senior Engineer
+  avatar: https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAS4AAAAJGUxMGRhN2EzLWFhOWEtNDYyYy1hOTVjLTRhZDU1ZWQ0Y2RlMw.jpg
+  social:
+    linkedin: https://www.linkedin.com/in/iamtimnguyen 
+
+- name: Bhavik Patel
+  team: Android
+  role: Engineer
+  avatar: https://avatars3.githubusercontent.com/u/10946952?v=3&s=400
+  social:
+    github: https://github.com/bhavlite 
+
+- name: Samer Akash
+  team: QA
+  role: Lead Engineer
+  avatar: https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAfBAAAAJGI3YTViYzkyLTE3YWYtNDQyYS1iMjA3LTU3NzU5Mjg3ZWM2NA.jpg
+  social:
+    linkedin: https://www.linkedin.com/in/samer-akash-b5899a113
+
+- name: Abraham Silwany
+  team: QA
+  role: Engineer
+    
+- name: Jorge Kinejara
+  team: iOS
+  role: Engineer
+  avatar: https://avatars0.githubusercontent.com/u/2127397?v=3&s=400
+  social:
+    github: https://github.com/kinejara
+
+- name: Joseph Chiocchi
+  team: DevOps
+  role: Engineer
+  avatar: https://avatars1.githubusercontent.com/u/134478?v=3&s=400
+  social:
+    github: https://github.com/yyolk
+
+- name: Omar Khudeira
+  team: JIRA
+  role: JIRA Engineer
+  avatar: https://www.gravatar.com/avatar/689fa26019e243e4f4d84c138e418ea4?s=144
+  social:
+    github: https://github.com/omar
+    stackoverflow: http://stackoverflow.com/users/160823/omar
+    linkedin: https://www.linkedin.com/in/okhudeira

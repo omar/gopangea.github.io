@@ -8,6 +8,10 @@ html {
 .site-header {
     background-color: #fff;
 
+    .wrapper {
+        padding: 15px 0;
+    }
+
     img {
         width: 213.5px; // 1/4th the size of the actual image
         vertical-align: top;
@@ -53,10 +57,10 @@ html {
 }
 
 nav {
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 300;
     text-align: center;
-    padding: 20px 0;
+    margin-top: 15px;
 
     ul {
         margin: 0;
@@ -65,10 +69,25 @@ nav {
     li {
         display: inline-flex;
         padding: 0 5px;
+
+        &.current a {
+            border-bottom-color: #00abc7;
+        }
+    }
+
+    a {
+        padding: 10px 0;
+        border-bottom: solid 10px transparent;
+        width: 100px;
+    }
+
+    a:hover {
+        border-bottom-color: #76cedd;
     }
 
     @media screen and (min-width: 600px) {
         float: right;
+        margin-right: 30px;
     }
 }
 
@@ -181,5 +200,17 @@ footer {
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+}
+
+.post {
+    background-color: #fff;
+    padding: 30px;
+
+    img {
+        width: calc(100% + 60px);
+        margin-left: calc(-30px);
+        margin-right: calc(-30px);
+        max-width: 200%;
     }
 }
