@@ -1,4 +1,5 @@
 - name: Bardia Noohi
+  bio: Bardia is the Lead Platform Engineer responsible for the development of Pangea's global remittance platform. Bardia is an avid board gamer and aviation enthusiast.
   team: Platform
   role: Lead Engineer
   avatar: https://avatars1.githubusercontent.com/u/10090598?v=3&s=400
@@ -41,6 +42,7 @@
     github: https://github.com/jackmichel
 
 - name: Tim Nguyen
+  bio: Tim is responsible for leading the development of Pangea’s Android app.  He hopes to inch closer in creating the best user-experience with every update the Android Team releases!
   team: Android
   role: Senior Engineer
   avatar: https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAS4AAAAJGUxMGRhN2EzLWFhOWEtNDYyYy1hOTVjLTRhZDU1ZWQ0Y2RlMw.jpg
@@ -55,6 +57,7 @@
     github: https://github.com/bhavlite 
 
 - name: Samer Akash
+  bio: Samer leads the QA team across iOS, Android, Web, and Platform. 
   team: QA
   role: Lead Engineer
   avatar: https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAfBAAAAJGI3YTViYzkyLTE3YWYtNDQyYS1iMjA3LTU3NzU5Mjg3ZWM2NA.jpg
@@ -71,13 +74,16 @@
   avatar: https://avatars0.githubusercontent.com/u/2127397?v=3&s=400
   social:
     github: https://github.com/kinejara
+    linkedin: https://www.linkedin.com/in/jorge-enrique-villanueva-kinejara-85395248
 
 - name: Joseph Chiocchi
+  bio: Joseph is Pangea's solo DevOps Engineer. Joseph's head is always in the clouds looking for the next services AWS releases that will make our lives easier.
   team: DevOps
   role: Engineer
   avatar: https://avatars1.githubusercontent.com/u/134478?v=3&s=400
   social:
     github: https://github.com/yyolk
+    linkedin: https://www.linkedin.com/in/joseph-chiocchi-411b6949
 
 - name: Omar Khudeira
   team: JIRA
