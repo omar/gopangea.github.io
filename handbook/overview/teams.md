@@ -25,6 +25,9 @@ title: Teams
             {% if member.social.linkedin %}
                 <a href="{{ member.social.linkedin }}"><i class="fa fa-linkedin fa-lg">&nbsp;</i></a>
             {% endif %}
+            {% if member.social.twitter %}
+                <a href="{{ member.social.twitter }}"><i class="fa fa-twitter fa-lg">&nbsp;</i></a>
+            {% endif %}
             </div>
         </li>
         {% endfor %}
