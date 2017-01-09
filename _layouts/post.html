@@ -12,7 +12,7 @@ layout: base
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
         {% if page.author %}
          by <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span itemprop="name"><a href="#author">{{ author.name }}</a></span>
+            <span itemprop="name"><a href="#author">{{ page.author }}</a></span>
             </span>
         {% endif %}
     </p>
@@ -45,6 +45,9 @@ layout: base
     {% if author.social.linkedin %}
         <a href="{{ author.social.linkedin }}"><i class="fa fa-linkedin fa-lg">&nbsp;</i></a>
     {% endif %}
+    {% if author.social.twitter %}
+        <a href="{{ author.social.twitter }}"><i class="fa fa-twitter fa-lg">&nbsp;</i></a>
+    {% endif %}
 
     <p class="description">{{ author.bio }}</p>
 </div>
@@ -72,6 +75,9 @@ layout: base
         {% endif %}
         {% if contributor.social.linkedin %}
             <a href="{{ contributor.social.linkedin }}"><i class="fa fa-linkedin fa-lg">&nbsp;</i></a>
+        {% endif %}
+        {% if author.social.twitter %}
+            <a href="{{ author.social.twitter }}"><i class="fa fa-twitter fa-lg">&nbsp;</i></a>
         {% endif %}
 
         <p class="description">{{ contributor.bio }}</p>
