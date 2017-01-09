@@ -2,8 +2,9 @@
 layout: post
 title:  "Why .NET?"
 date:   2015-12-10
-author: omar
-contributor: carlos
+author: Omar Khudeira
+contributors:
+   - "Carlos Rocha"
 ---
 We get asked "Why .NET?" a lot. It's rare to find .NET startups these days and for good reason. Historically speaking, the .NET ecosystem was unattractive due to the high licensing cost of Windows and Visual Studio. In addition, .NET had poor interoperability with non-Microsoft products, which meant additional licensing costs for compatible products (like SQL Server). Lastly, Microsoft's [aggressive anti-competitive stance](https://en.wikipedia.org/wiki/Embrace,_extend_and_extinguish) towards its competitors and open source software created a rift between their products and developers.
 

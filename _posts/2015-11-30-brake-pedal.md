@@ -2,7 +2,7 @@
 layout: post
 title:  "Brake Pedal - rate limiting, throttling, and locking"
 date:   2015-11-30 00:00:01
-author: omar
+author: Omar Khudeira
 ---
 `Brake Pedal` is a general purpose throttling and rate limting library for `.NET`. The code was forked from [WebApiThrottle](https://github.com/stefanprodan/WebApiThrottle). 
 It's currently in use by our production systems. The library is available at [github.com/gopangea/BrakePedal](https://github.com/gopangea/BrakePedal). 
