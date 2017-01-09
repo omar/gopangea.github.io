@@ -6,11 +6,10 @@ title: Pangea Engineering
 <div class="col-left">
     <div class="content">
         <h2>Posts</h2>
-
         <ul class="post-list">
             {% for post in site.posts %}
             <li>
-                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} {% if post.author %} by {{ site.data.team[post.author].name }}{% endif %}</span>
+                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} {% if post.author %} by {{ post.author }}{% endif %}</span>
                 <h2>
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h2>

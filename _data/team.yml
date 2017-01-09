@@ -34,7 +34,8 @@
   social:
     github: https://github.com/coppolaemilio
 
-- name: Jack Michel 
+- name: Jack Michel
+  bio: Jack is an engineer on the web application team. In a previous life, Jack was a serious Magic the Gathering player and is now enjoying Hearthstone.
   team: Web
   role: Engineer
   avatar: https://avatars2.githubusercontent.com/u/5263599?v=3&s=400
@@ -57,7 +58,7 @@
     github: https://github.com/bhavlite 
 
 - name: Samer Akash
-  bio: Samer leads the QA team across iOS, Android, Web, and Platform. 
+  bio: Samer leads the QA team across iOS, Android, Web, and Platform. Samer is a car and music enthusiast meaning he loves his 418HP Benz and his 1962 Fender Jaguar guitar more than anything!
   team: QA
   role: Lead Engineer
   avatar: https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAfBAAAAJGI3YTViYzkyLTE3YWYtNDQyYS1iMjA3LTU3NzU5Mjg3ZWM2NA.jpg
@@ -87,7 +88,7 @@
 
 - name: Omar Khudeira
   team: JIRA
-  bio: Omar is the head of engineering at Pangea and the editor-in-chief of the engineering blog. Prior to leading the engineering team, Omar built the initial version of the platform that powers Pangea's global reach.
+  bio: Omar is the head of engineering and product development at Pangea and the editor-in-chief of the Engineering Portal. Prior to leading the engineering team, Omar built the initial version of the platform that powers Pangea's global reach.
   role: JIRA Engineer
   avatar: https://www.gravatar.com/avatar/689fa26019e243e4f4d84c138e418ea4?s=144
   social:
