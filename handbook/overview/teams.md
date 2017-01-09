@@ -1,7 +1,7 @@
 ---
 title: Teams
 ---
-{% assign teams = site.data.engineering_team | group_by:'team' %}
+{% assign teams = site.data.team | group_by:'team' %}
 {% for team in teams %}
 <div class="team">
     <h2>{{ team.name }} ({{ team.items | size }})</h2>

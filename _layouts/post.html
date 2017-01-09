@@ -26,7 +26,7 @@ layout: base
 
 <a id="author"></a>
 {% if page.author %}
-{% assign author = site.data.engineering_team | where: "name", page.author | first %}
+{% assign author = site.data.team | where: "name", page.author | first %}
 <div class="author-info">
     <h3>Author</h3>
     {% if author.avatar %}
@@ -55,7 +55,7 @@ layout: base
     <h3>Contributors</h3>
     
     {% for name in page.contributors %}
-    {% assign contributor = site.data.engineering_team | where: "name", name | first %}
+    {% assign contributor = site.data.team | where: "name", name | first %}
     <div class="contributor">
         {% if contributor.avatar %}
         <img class="photo" src="{{ contributor.avatar }}" />
