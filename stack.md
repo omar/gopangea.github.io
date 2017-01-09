@@ -40,8 +40,8 @@ css-id: our-stack
 ### DevOps
 
 * [Chef](https://chef.io) _for_ Orchestration
-* [TeamCity](https://www.jetbrains.com/teamcity/) _for_ Build Pipelines
-* [Zabbix](http://www.zabbix.com/) _for_ Monitoring
+* [Jenkins](https://jenkins.io/) _for_ Build Pipelines
+* [New Relic](https://www.newrelic.com/) _for_ Monitoring
 * [PagerDuty](https://www.pagerduty.com/) _for_ Alerting
 
 ### Communication
