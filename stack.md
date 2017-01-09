@@ -13,7 +13,7 @@ css-id: our-stack
 
 ### Frontend
 
-* [Objective-C](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html) _for_ iOS
+* [Objective-C](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html)/[Swift](https://swift.org/) _for_ iOS
 * [Java](https://www.oracle.com/java/index.html)/[Kotlin](https://kotlinlang.org/) _for_ Android
 * [React](https://facebook.github.io/react/) _for_ Web App
 * [Jekyll](http://jekyllrb.com/) _for_ Web Site

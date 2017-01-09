@@ -28,6 +28,8 @@ top_nav:
           {% for link in layout.top_nav %}
             {% if url == '/' and link.prefix == '/' %}
             <li class="current"> 
+            {% elsif link.text == 'Blog' and url contains '/20' %}
+            <li class="current">
             {% elsif link.prefix != '/' and url contains link.prefix %}
             <li class="current">
             {% else %}
