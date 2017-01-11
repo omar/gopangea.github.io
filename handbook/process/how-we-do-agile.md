@@ -7,7 +7,7 @@ Everyone does Agile their own way. This is how we do it.
     - Start: Monday morning
     - End: Friday morning
 - Sprint Ceremonies
-    - Last day of Sprint (Firday)
+    - Last day of Sprint (Friday)
         - Story Time
         - Sprint Review
         - Sprint Retrospective
