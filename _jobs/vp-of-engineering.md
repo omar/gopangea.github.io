@@ -1,6 +1,6 @@
 ---
 title: VP of Engineering
-team: Platform
+team: Management
 ---
 
 We’re looking for a Head of Engineering to lead all new and existing developments on the Pangea Platform.
