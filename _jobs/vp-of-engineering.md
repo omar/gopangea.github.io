@@ -12,7 +12,7 @@ The successful candidate will be a hands-on technologist, a strong manager and t
 - Experience with project management, capacity planning, short-term and long-term road mapping
 - Experience with architecting fault-tolerant distributed systems in the cloud (AWS) leveraging message queues and creating and consuming REST APIs
 - Experience managing stakeholders at varying levels of an organization
-- BS or MS degree in Computer Science of equivalent
+- BS or MS degree in Computer Science or equivalent
 - Strong verbal and written communication skills
 
 ### What you'll Do
