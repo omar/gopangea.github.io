@@ -8,7 +8,7 @@ The successful candidate will be a hands-on technologist, a strong manager and t
 
 ### What you'll Need
 - Experience managing and mentoring multi-disciplinary group of 10+ engineers across iOS, Android, Web, DevOps, QA, and Platform
-- Experience running Agile Scrum across multiple 5+ interdependent teams
+- Experience running Agile Scrum across 5+ interdependent teams
 - Experience with project management, capacity planning, short-term and long-term road mapping
 - Experience with architecting fault-tolerant distributed systems in the cloud (AWS) leveraging message queues and creating and consuming REST APIs
 - Experience managing stakeholders at varying levels of an organization
